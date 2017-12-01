@@ -48,5 +48,10 @@ class User extends Base {
             return $this->fetch();
         }
     }
-
+    public function info(){
+        if ( !is_login() ) {
+            $this->error( '您还没有登陆',url('User/login') );
+        }
+        return $this->fetch('my');
+    }
 }

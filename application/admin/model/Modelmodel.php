@@ -57,7 +57,7 @@ class Modelmodel extends Model{
         cache('document_model_list', null);
         //记录行为
         action_log('update_model','model',isset($data['id']) ? $data['id'] : $id->id,UID);
-        //内容添加或更新完成
+        //内容添加或更新完成\
         return $data;
     }
 

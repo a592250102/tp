@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:84:"D:\phpStudy\WWW\ThinkPHP\public/../application/admin/view/default/service\index.html";i:1511677783;s:82:"D:\phpStudy\WWW\ThinkPHP\public/../application/admin/view/default/public\base.html";i:1496373782;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:84:"D:\phpStudy\WWW\ThinkPHP\public/../application/admin/view/default/service\index.html";i:1511747338;s:82:"D:\phpStudy\WWW\ThinkPHP\public/../application/admin/view/default/public\base.html";i:1496373782;}*/ ?>
 <!doctype html>
 <html>
 <head>
@@ -148,6 +148,10 @@
         <?php endif; ?>
         </tbody>
     </table>
+</div>
+<!-- 分页 -->
+<div class="page">
+    <?php echo $_page; ?>
 </div>
 
         </div>

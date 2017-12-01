@@ -8,6 +8,7 @@
 // +----------------------------------------------------------------------
 namespace app\admin\controller;
 use app\admin\model\AuthGroup;
+use think\Db;
 
 /**
  * 后台内容控制器

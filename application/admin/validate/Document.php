@@ -13,7 +13,7 @@ class Document extends Base{
         ['level', '/^[\d]+$/', '优先级只能填正整数'],
         ['description', 'length:1,140', '简介长度不能超过140个字符'],
     	['category_id','require|check_category','分类不能为空|该分类不允许发布内容'],
-    	['model_id','check_category_model','该分类没有绑定当前模型']
+    	['model_id','check_category_model','该分类没有绑定当前模型'],
     ];
     protected $scene = [
         'auto'     => 'name,title,level,description,category_id',//写入时验证

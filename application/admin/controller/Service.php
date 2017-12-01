@@ -4,8 +4,13 @@ namespace app\admin\controller;
 class Service extends Admin{
     //列表
     public function index(){
-        $list = \think\Db::name('Service')->order('sort asc,id asc')->select();
+        $list = \think\Db::name('Service')->paginate(1);
+        $total= \think\Db::name('Service')->count();
+        // 获取分页显示
+        $page = $list->render();
         $this->assign('list', $list);
+        $this->assign('_page', $page);
+        $this->assign('_total', $total);
         $this->assign('meta_title' , '维修管理');
         return $this->fetch();
     }

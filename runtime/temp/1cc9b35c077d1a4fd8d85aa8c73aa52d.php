@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:83:"D:\phpStudy\WWW\ThinkPHP\public/../application/home/view/default/article\lists.html";i:1496373782;s:81:"D:\phpStudy\WWW\ThinkPHP\public/../application/home/view/default/base\common.html";i:1496373782;s:78:"D:\phpStudy\WWW\ThinkPHP\public/../application/home/view/default/base\var.html";i:1496373782;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:83:"D:\phpStudy\WWW\ThinkPHP\public/../application/home/view/default/article\lists.html";i:1496373782;s:81:"D:\phpStudy\WWW\ThinkPHP\public/../application/home/view/default/base\common.html";i:1511746795;s:78:"D:\phpStudy\WWW\ThinkPHP\public/../application/home/view/default/base\var.html";i:1496373782;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -63,7 +63,7 @@
 	                            <a href="<?php echo url('user/login/index'); ?>">登录</a>
 	                        </li>
 	                        <li>
-	                            <a href="<?php echo url('user/user/register'); ?>" style="padding-left:0;padding-right:0">注册</a>
+	                            <a href="<?php echo url('user/login/register'); ?>" style="padding-left:0;padding-right:0">注册</a>
 	                        </li>
 	                    </ul>
 	                <?php endif; ?>
