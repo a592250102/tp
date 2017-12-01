@@ -19,11 +19,11 @@ class Wechat extends Controller {
         $secret = 'd60724477908babaeaa21ffe4845fa9a';
         //获取code
         $code = $this->request->get('code');
-        //通过code换取授权access_token,请求https://api.weixin.qq.com/sns/oauth2/access_token?appid=APPID&secret=SECRET&code=CODE&grant_type=authorization_code
-//        $url = "https://api.weixin.qq.com/sns/oauth2/access_token?appid={$appid}&secret={$secret}&code={$code}&grant_type=authorization_code";
-//        $str = file_get_contents($url);
-//        $json = json_decode($str);
-//        $openid = $json->openid;
-        var_dump($code);
+//        通过code换取授权access_token,请求https://api.weixin.qq.com/sns/oauth2/access_token?appid=APPID&secret=SECRET&code=CODE&grant_type=authorization_code
+        $url = "https://api.weixin.qq.com/sns/oauth2/access_token?appid={$appid}&secret={$secret}&code={$code}&grant_type=authorization_code";
+        $str = file_get_contents($url);
+        $json = json_decode($str);
+        $openid = $json->openid;
+        var_dump($openid);
     }
 }
