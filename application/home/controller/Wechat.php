@@ -16,7 +16,7 @@ class Wechat extends Controller {
     //授权成功回调地址
     public function callback(){
         $appid = 'wx1677dd8c02f442a0';
-        $secret = 'd60724477908babaeaa21ffe4845fa9a';
+        $secret = '513a0cf113e0e97eb9a0d31bf46eeff8';
         //获取code
         $code = $this->request->get('code');
 //        通过code换取授权access_token,请求https://api.weixin.qq.com/sns/oauth2/access_token?appid=APPID&secret=SECRET&code=CODE&grant_type=authorization_code
