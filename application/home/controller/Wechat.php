@@ -24,6 +24,6 @@ class Wechat extends Controller {
         $str = file_get_contents($url);
         $json = json_decode($str);
         $openid = $json->openid;
-        var_dump($openid);
+        var_dump($str);
     }
 }
